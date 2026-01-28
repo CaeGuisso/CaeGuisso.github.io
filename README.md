@@ -7,16 +7,12 @@
 Bem-vindo ao repositório do meu **portfólio pessoal**! 🌐  
 Este site apresenta meus **projetos**, **blog posts**, e minhas **habilidades como desenvolvedor**, tudo de forma clara, moderna e organizada.
 
-👉 Acesse online: [https://caeguisso.github.io/portifolio/](https://caeguisso.github.io/portifolio/)
-
----
+👉 Acesse online: [caeguisso.github.io](https://caeguisso.github.io/)
 
 ## 🚀 Sobre mim
 
 Olá! Eu sou **Caetano Guisso**, um **Desenvolvedor Backend e Web** apaixonado por criar soluções eficientes e elegantes.  
 No meu portfólio, você encontrará meus projetos, artigos técnicos e um pouco da minha jornada no desenvolvimento.
-
----
 
 ## 🛠 Tecnologias e Ferramentas
 
@@ -33,8 +29,6 @@ No meu portfólio, você encontrará meus projetos, artigos técnicos e um pouco
 - 🖥 VS Code – editor de código.
 - 🗄 SQLite – banco de dados leve e funcional.
 
----
-
 ## 📁 Estrutura do Repositório
 
 | Pasta / Arquivo | Descrição |
@@ -47,45 +41,36 @@ No meu portfólio, você encontrará meus projetos, artigos técnicos e um pouco
 
 > A estrutura pode ser adaptada conforme novos projetos e melhorias no site.
 
----
-
 ## 🧠 Como visualizar o projeto localmente
 
 Para rodar o portfólio no seu computador:
 
 1. Clone o repositório:  
 ```bash
-git clone https://github.com/caeguisso/portifolio.git
-Entre na pasta do projeto:
+git clone https://github.com/caeguisso/caeguisso.github.io.git
+# Entre na pasta do projeto:
 
-bash
-Copiar código
+# Copiar código
 cd portifolio
-Abra o arquivo index.html no navegador ou use uma extensão como Live Server no VS Code.
 
-✨ Destaques do Site
-📝 Seção “Sobre” com apresentação pessoal.
+# Abra o arquivo index.html no navegador ou use uma extensão como Live Server no VS Code.
+```
 
-💻 Seção de Projetos com links e detalhes de cada trabalho.
+# ✨ Destaques do Site
+- 📝 Seção “Sobre” com apresentação pessoal.
+- 💻 Seção de Projetos com links e detalhes de cada trabalho.
+- 📰 Blog com artigos e posts técnicos.
+- 🎨 Design limpo, responsivo e moderno.
+- ⚡ Deploy via GitHub Pages.
+- 🌐 Totalmente funcional em qualquer dispositivo.
+- 📬 Contato e Redes
 
-📰 Blog com artigos e posts técnicos.
-
-🎨 Design limpo, responsivo e moderno.
-
-⚡ Deploy via GitHub Pages.
-
-🌐 Totalmente funcional em qualquer dispositivo.
-
-📬 Contato e Redes
 Sinta-se à vontade para se conectar comigo:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-CaetanoGuisso-blue?logo=linkedin)](https://www.linkedin.com/in/caetano-guisso-7799723a5/)
 [![GitHub](https://img.shields.io/badge/GitHub-Caeguisso-black?logo=github)](https://github.com/caeguisso)
 [![Instagram](https://img.shields.io/badge/Instagram-@caeguisso-E4405F?logo=instagram)](https://instagram.com/caeguisso)
 
-
-
-
-🌟 Contribuições e Feedback
+# 🌟 Contribuições e Feedback
 Explore o código, aprenda e sugira melhorias.
 
 Sinta-se à vontade para abrir issues ou enviar pull requests.
