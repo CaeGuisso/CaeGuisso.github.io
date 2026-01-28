@@ -22,6 +22,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Create folder
+        run: mkdir dist
+      - name: Copy all files to dist
+        run: |
+            cp -R img dist
+            cp blog.html dist
+            cp index.html dist
+            cp script.js dist
+            cp style.css dist
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
