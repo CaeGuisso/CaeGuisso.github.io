@@ -27,6 +27,7 @@ jobs:
       - name: Copy all files to dist
         run: |
             cp -R img dist
+            cp projects.html dist
             cp blog.html dist
             cp index.html dist
             cp script.js dist
