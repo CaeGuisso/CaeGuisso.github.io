@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Botão flutuante */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #00e0ff;
+  z-index: 999;
+}
+
+/* Caixa do chat */
+#chatbot {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  height: 420px;
+  background: #111;
+  color: #fff;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0,0,0,.6);
+}
+
+/* Esconder */
+.hidden {
+  display: none;
+}
+
+/* Header */
+#chat-header {
+  background: #00e0ff;
+  color: #000;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mensagens */
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+/* Mensagens */
+.message {
+  margin-bottom: 8px;
+}
+
+.user {
+  text-align: right;
+  color: #00e0ff;
+}
+
+.bot {
+  text-align: left;
+}
+
+/* Botões */
+#quick-actions {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #0a0a0a;
+}
+
+#quick-actions button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  background: #1f1f1f;
+  color: #fff;
+  transition: 0.2s;
+}
+
+#quick-actions button:hover {
+  background: #00e0ff;
+  color: #000;
+}

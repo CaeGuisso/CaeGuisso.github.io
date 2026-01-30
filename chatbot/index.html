@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>GuissoBot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Botão flutuante -->
+<button id="chat-toggle">💬</button>
+
+<!-- Chat -->
+<div id="chatbot" class="hidden">
+  <div id="chat-header">GuissoBot</div>
+
+  <div id="chat-messages"></div>
+
+  <div id="quick-actions">
+    <button data-msg="recrutador">👔 Sou recrutador</button>
+    <button data-msg="stack">🧠 Stack</button>
+    <button data-msg="projetos">📂 Projetos</button>
+    <button data-msg="contato">📞 Contato</button>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>
+</body>
+</html>
