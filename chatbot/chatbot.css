@@ -162,3 +162,13 @@
     0 0 16px #a29bfe,
     0 0 24px #a29bfe;
 }
+
+@media (max-width: 600px) {
+  #chatbot {
+    right: 50%;
+    transform: translateX(50%);
+    width: calc(100vw - 24px);
+    height: 75vh;
+    bottom: 80px;
+  }
+}
