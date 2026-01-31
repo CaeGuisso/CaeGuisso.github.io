@@ -32,7 +32,7 @@ jobs:
             cp index.html dist
             cp script.js dist
             cp style.css dist
-            cp chatbot.js
+            cp chatbot.js dist
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
