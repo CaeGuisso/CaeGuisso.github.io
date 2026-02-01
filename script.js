@@ -3,9 +3,10 @@ const searchIcon = document.querySelector("#searchIcon");
 const navOpenbtn = document.querySelector(".navOpenBtn");
 const navCloseBtn = document.querySelector(".navCloseBtn");
 
-searchIcon.addEventListener("click", () => {
-    nav.classList.toggle("openSearch");
-});
+if (searchIcon) {
+  searchIcon.addEventListener("click", () => {});
+}
+
 
 navOpenbtn.addEventListener("click", () => {
   nav.classList.add("openNav");
