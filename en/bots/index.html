@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caetano Guisso • Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caetano Guisso • Bots</title>
 
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../img/nft.ico">
-  <script src="../script.js" defer></script>
+  <link rel="icon" href="/img/nft.ico">
+  <link rel="stylesheet" href="bots.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
 
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
 </head>
@@ -20,9 +21,9 @@
     <ul class="nav-links">
       <i class="uil uil-times navCloseBtn"></i>
       <li><a href="/en/">Home</a></li>
-      <li><a href="/en/projects.html">Projects</a></li>
-      <li><a href="/en/blog.html">Blog</a></li>
-      <li><a href="/en/bots.html">Bots</a></li>
+      <li><a href="/en/projects/">Projects</a></li>
+      <li><a href="/en/blog/">Blog</a></li>
+      <li><a href="/en/bots/">Bots</a></li>
     </ul>
         <!-- language switcher -->
 <div class="lang" id="langRoot">
@@ -44,170 +45,131 @@
 
   </nav>
 
-  <div class="topicos">
-    <h4>— MAIN PROJECTS</h4>
-  </div>
+  <header class="page-header">
+    <h1>Discord Bots</h1>
 
-  <section class="projects">
-    <div class="cards">
+    <p>
+      Development of Discord bots, including ready-to-use solutions,
+      premium bots, and custom-made projects, focused on automation,
+      moderation, and the specific needs of each server.
+    </p>
+  </header>
 
-      <div class="card">
-        <div class="card-img">
-          <img src="../img/homelab.png" alt="Caetano Guisso Portfolio">
-        </div>
-        <span class="tag">PROJECT</span>
-        <h3>Personal Portfolio</h3>
-        <p>
-          Personal website created to centralize my projects, studies, and my identity
-          as a Backend Developer. Futuristic design focused on organization, clarity,
-          and valuing the logical foundation behind each system.
+  <!-- FREE BOTS -->
+  <section class="bots-section">
+    <h2 class="section-title">Free Bots</h2>
+
+    <div class="bots-grid">
+      <div class="bot-card">
+        <img src="/img/emebedgen.png" alt="EmbedGen" class="bot-image" />
+
+        <h3 class="bot-title">EmbedGen</h3>
+
+        <p class="bot-description">
+          Free bot to quickly and easily create custom Discord embeds.
         </p>
-        <a href="#">OPEN ↗</a>
-      </div>
 
-      <div class="card">
-        <div class="card-img">
-          <img src="../img/discord-bots.png" alt="Discord Bots">
-        </div>
-        <span class="tag">PROJECT</span>
-        <h3>Discord Bots</h3>
-        <p>
-          Development of Python bots for task automation, custom commands,
-          response systems, and server management. Projects focused on logic,
-          clean code organization, and API integration.
-        </p>
-        <a href="#">OPEN ↗</a>
+        <a
+          href="https://discord.com/oauth2/authorize?client_id=1456095898567184456"
+          target="_blank"
+          class="invite-button">
+          Invite for free
+        </a>
       </div>
-
-      <div class="card">
-        <div class="card-img">
-          <img src="../img/ui-cyber.png" alt="UI Cyber Components">
-        </div>
-        <span class="tag">PROJECT</span>
-        <h3>UI Cyber Components</h3>
-        <p>
-          A set of visual components developed with HTML and CSS using a cyber/neon aesthetic.
-          Includes navbars, cards, glow effects, advanced hover states, and modern layouts
-          for personal projects and portfolios.
-        </p>
-        <a href="#">OPEN ↗</a>
-      </div>
-
     </div>
   </section>
 
-  <div class="texto-projetos">
-    <h1><span class="texto-destaque">My</span> Projects</h1>
-  </div>
+  <!-- PAID BOTS -->
+  <section class="bots-section">
+    <h2 class="section-title">Paid Bots</h2>
 
-  <section class="tech-cards">
-    <div class="mini-card" data-tech="todos">All</div>
-    <div class="mini-card" data-tech="python">Python</div>
-    <div class="mini-card" data-tech="html">HTML</div>
-    <div class="mini-card" data-tech="sqlite">SQLite</div>
+    <div class="bots-grid">
+      <div class="bot-card premium">
+        <img src="/img/discord-bots.png" alt="Premium Bot" class="bot-image" />
+
+        <h3 class="bot-title">Ticket Premium</h3>
+
+        <p class="bot-description">
+          Custom-made bot with advanced integrations, security,
+          and dedicated support.
+        </p>
+
+        <a
+          href="https://discord.gg/DRjexmMtbh"
+          target="_blank"
+          class="invite-button premium">
+          Buy on Discord
+        </a>
+      </div>
+    </div>
+
+    <div class="bots-grid">
+      <div class="bot-card premium">
+        <img src="/img/discord-bots.png" alt="Premium Bot" class="bot-image" />
+
+        <h3 class="bot-title">Sales Premium</h3>
+
+        <p class="bot-description">
+          Custom-made bot with advanced integrations, security,
+          and dedicated support.
+        </p>
+
+        <a
+          href="https://discord.gg/DRjexmMtbh"
+          target="_blank"
+          class="invite-button premium">
+          Buy on Discord
+        </a>
+      </div>
+    </div>
+
+    <div class="bots-grid">
+      <div class="bot-card premium">
+        <img src="/img/discord-bots.png" alt="Premium Bot" class="bot-image" />
+
+        <h3 class="bot-title">Moderation Premium</h3>
+
+        <p class="bot-description">
+          Custom-made bot with advanced integrations, security,
+          and dedicated support.
+        </p>
+
+        <a
+          href="https://discord.gg/DRjexmMtbh"
+          target="_blank"
+          class="invite-button premium">
+          Buy on Discord
+        </a>
+      </div>
+    </div>
   </section>
 
-  <section class="projects" id="projects">
+  <!-- CUSTOM BOTS -->
+  <section class="bots-section">
+    <h2 class="section-title">Custom Bots</h2>
 
-    <!-- PYTHON -->
-    <div class="project-list" id="python">
-      <h2>Python Projects</h2>
+    <div class="bots-grid">
+      <div class="bot-card premium">
+        <img
+          src="/img/encomenda.jpg"
+          alt="Custom Bot"
+          class="bot-image" />
 
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <span class="tag">BOT</span>
-            <h3>Discord Bot</h3>
-          </div>
-        </div>
-        <p>
-          Python bot for automation, custom commands, moderation,
-          economy systems, and integration with external APIs.
+        <h3 class="bot-title">Custom Discord Bot</h3>
+
+        <p class="bot-description">
+          Custom-built bot tailored to the server’s needs,
+          with exclusive features, security, and direct support.
         </p>
-        <a href="#">OPEN ↗</a>
-      </div>
 
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <span class="tag">SCRIPT</span>
-            <h3>Task Automation</h3>
-          </div>
-        </div>
-        <p>
-          Python scripts to organize files, consume APIs,
-          generate reports, and automate repetitive processes.
-        </p>
-        <a href="#">OPEN ↗</a>
+        <a
+          href="https://discord.com/users/1191081268755042525"
+          target="_blank"
+          class="invite-button premium">
+          Request on Discord
+        </a>
       </div>
     </div>
-
-    <!-- HTML -->
-    <div class="project-list" id="html">
-      <h2>HTML & CSS Projects</h2>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <span class="tag">SITE</span>
-            <h3>Personal Portfolio</h3>
-          </div>
-        </div>
-        <p>
-          Personal website with a cyber/neon aesthetic, smooth animations,
-          modern layout, and focus on developer identity.
-        </p>
-        <a href="#">OPEN ↗</a>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <span class="tag">UI</span>
-            <h3>UI Cyber Components</h3>
-          </div>
-        </div>
-        <p>
-          Collection of visual components: cards, navbars, buttons,
-          and glow effects for futuristic projects.
-        </p>
-        <a href="#">OPEN ↗</a>
-      </div>
-    </div>
-
-    <!-- SQLITE -->
-    <div class="project-list" id="sqlite">
-      <h2>SQLite Projects</h2>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <span class="tag">DATABASE</span>
-            <h3>Database for Bots</h3>
-          </div>
-        </div>
-        <p>
-          SQLite integration with Discord bots to store users,
-          virtual economy, levels, settings, and command history.
-        </p>
-        <a href="#">OPEN ↗</a>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <span class="tag">SYSTEM</span>
-            <h3>Persistence System</h3>
-          </div>
-        </div>
-        <p>
-          Local persistence structure for Python projects,
-          ensuring organization, performance, and data control.
-        </p>
-        <a href="#">OPEN ↗</a>
-      </div>
-    </div>
-
   </section>
 
   <footer class="footer">
@@ -221,9 +183,9 @@
       <div class="footer-nav">
         <h4>— NAVIGATION</h4>
         <a href="/en/">Home</a>
-        <a href="/en/projects.html">Projects</a>
-        <a href="/en/blog.html">Blog</a>
-        <a href="/en/bots.html">Bots</a>
+        <a href="/en/projects/">Projects</a>
+        <a href="/en/blog/">Blog</a>
+        <a href="/en/bots/">Bots</a>
       </div>
 
       <div class="footer-social">
@@ -241,6 +203,7 @@
       © 2026 • Caetano Guisso — All rights reserved.
     </div>
   </footer>
+
   
 <script>
 (function() {
@@ -319,7 +282,7 @@
   // Função para aplicar traduções via data-i18n (opcional, útil se quiser single-file)
   function applyLanguage(lang) {
     // O objeto "translations" só funciona se você manter traduções no mesmo arquivo.
-    // Caso seu site use páginas estáticas separadas (/en/...), ignore essa parte.
+    // Caso seu site use páginas estáticas separadas (/en/.), ignore essa parte.
     if (window.translations && typeof window.translations === 'object') {
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
