@@ -33,7 +33,7 @@ jobs:
             cp script.js dist
             cp style.css dist
             cp -r chatbot dist
-            cp bots.style dist
+            cp bots.css dist
             cp bots.html dist
 
 
