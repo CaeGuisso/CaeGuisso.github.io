@@ -32,7 +32,7 @@ jobs:
             cp style.css dist
             cp -r chatbot dist
             cp -r en dist
-            cp -r projetos dist
+            cp -r projects dist
             cp -r blog dist
             cp -r bots dist
 
