@@ -33,6 +33,8 @@ jobs:
             cp script.js dist
             cp style.css dist
             cp -r chatbot dist
+            cp bots.style dist
+            cp bots.html dist
 
 
       - name: Upload Pages artifact
