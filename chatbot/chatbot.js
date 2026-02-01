@@ -9,10 +9,85 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let welcomeSent = false;
 
-  if (!chatToggle || !chatbot || !chatMessages || !userInput || !sendBtn) {
-    console.error("❌ Elementos do chatbot não encontrados");
-    return;
-  }
+  // 🔹 DETECTA IDIOMA PELO URL
+  const lang = window.location.pathname.startsWith("/en") ? "en" : "pt";
+
+  // 🔹 TEXTOS POR IDIOMA
+  const TEXTS = {
+    pt: {
+      welcome:
+        "Olá! 👋 Eu sou o GuissoBot 🤖\n" +
+        "Estou aqui para te ajudar a conhecer melhor o Caetano.",
+
+      autoWelcome:
+        "Olá! 👋 Eu sou o chatbot do portfólio.\n" +
+        "Se precisar de ajuda, digite *oi* ou use os botões abaixo 👇",
+
+      notFound:
+        "Não entendi muito bem 🤔\nTente algo como:",
+
+      suggestionsMain: [
+        "Quem é Caetano?",
+        "Sou recrutador",
+        "Stack",
+        "Projetos",
+        "Contato"
+      ],
+
+      recruiter:
+        "👔 Perfeito!\n\nCaetano é desenvolvedor Backend focado em Python, automação, bots e sistemas sólidos.",
+
+      who:
+        "Caetano Guisso é desenvolvedor Backend.\n\nTrabalha com Python, automação, bots e lógica de sistemas.",
+
+      stack:
+        "🧠 Stack principal:\n• Python\n• Java\n• JavaScript\n• HTML & CSS\n• SQLite\n\nFoco total em backend.",
+
+      projects:
+        "📂 Caetano desenvolve projetos próprios focados em backend e automação.\n\nTodos disponíveis no GitHub.",
+
+      contact:
+        "📞 Você pode entrar em contato pelo GitHub, LinkedIn ou Instagram."
+    },
+
+    en: {
+      welcome:
+        "Hello! 👋 I'm GuissoBot 🤖\n" +
+        "I'm here to help you learn more about Caetano.",
+
+      autoWelcome:
+        "Hello! 👋 I'm the portfolio chatbot.\n" +
+        "If you need help, type *hi* or use the buttons below 👇",
+
+      notFound:
+        "I didn't quite understand 🤔\nTry something like:",
+
+      suggestionsMain: [
+        "Who is Caetano?",
+        "I'm a recruiter",
+        "Tech stack",
+        "Projects",
+        "Contact"
+      ],
+
+      recruiter:
+        "👔 Great!\n\nCaetano is a Backend Developer focused on Python, automation, bots, and solid systems.",
+
+      who:
+        "Caetano Guisso is a Backend Developer.\n\nHe works with Python, automation, bots, and system logic.",
+
+      stack:
+        "🧠 Main stack:\n• Python\n• Java\n• JavaScript\n• HTML & CSS\n• SQLite\n\nStrong backend focus.",
+
+      projects:
+        "📂 Caetano develops personal projects focused on backend and automation.\n\nAll available on GitHub.",
+
+      contact:
+        "📞 You can reach out via GitHub, LinkedIn, or Instagram."
+    }
+  };
+
+  const T = TEXTS[lang];
 
   // 🔹 ADD MESSAGE
   function addMessage(sender, text) {
@@ -44,96 +119,48 @@ document.addEventListener("DOMContentLoaded", () => {
     let reply = "";
     let suggestions = [];
 
-    if (
-      msg === "oi" ||
-      msg === "olá" ||
-      msg === "ola" ||
-      msg.includes("bom dia") ||
-      msg.includes("boa tarde") ||
-      msg.includes("boa noite")
-    ) {
-      reply =
-        "Olá! 👋 Eu sou o GuissoBot 🤖\n" +
-        "Estou aqui para te ajudar a conhecer melhor o Caetano.";
-
-      suggestions = [
-        "Quem é Caetano?",
-        "Sou recrutador",
-        "Stack",
-        "Projetos",
-        "Contato"
-      ];
+    if (msg.includes("oi") || msg.includes("olá") || msg.includes("hi") || msg.includes("hello")) {
+      reply = T.welcome;
+      suggestions = T.suggestionsMain;
     }
 
-    else if (msg.includes("recrutador")) {
-      reply =
-        "👔 Perfeito!\n\n" +
-        "Caetano é desenvolvedor Backend focado em Python, automação, bots e construção de sistemas sólidos.";
-
-      suggestions = [
-        "Stack técnica",
-        "Projetos relevantes",
-        "Contato"
-      ];
+    else if (msg.includes("recrutador") || msg.includes("recruiter")) {
+      reply = T.recruiter;
+      suggestions = ["Stack", "Projects", "Contact"];
     }
 
-    else if (msg.includes("quem é caetano")) {
-      reply =
-        "Caetano Guisso é desenvolvedor Backend.\n\n" +
-        "Trabalha com Python, automação, bots e lógica de sistemas.";
-
-      suggestions = [
-        "Stack",
-        "Projetos",
-        "Contato"
-      ];
+    else if (msg.includes("quem") || msg.includes("who")) {
+      reply = T.who;
+      suggestions = ["Stack", "Projects", "Contact"];
     }
 
     else if (msg.includes("stack")) {
-      reply =
-        "🧠 Stack principal:\n" +
-        "• Python\n• Java\n• JavaScript\n• HTML & CSS\n• SQLite\n\n" +
-        "Foco total em backend.";
-
-      suggestions = ["Projetos", "Contato"];
+      reply = T.stack;
+      suggestions = ["Projects", "Contact"];
     }
 
-    else if (msg.includes("projeto")) {
-      reply =
-        "📂 O Caetano desenvolve projetos próprios focados em backend e automação.\n\n" +
-        "Todos disponíveis no GitHub.";
-
-      suggestions = ["Stack", "Contato"];
+    else if (msg.includes("projeto") || msg.includes("project")) {
+      reply = T.projects;
+      suggestions = ["Stack", "Contact"];
     }
 
-    else if (msg.includes("contato")) {
-      reply =
-        "📞 Você pode entrar em contato pelo GitHub, LinkedIn ou Instagram.";
-
-      suggestions = ["Projetos"];
+    else if (msg.includes("contato") || msg.includes("contact")) {
+      reply = T.contact;
+      suggestions = ["Projects"];
     }
 
     else {
-      reply =
-        "Não entendi muito bem 🤔\n" +
-        "Tente algo como:";
-
-      suggestions = [
-        "Quem é Caetano?",
-        "Sou recrutador",
-        "Stack",
-        "Projetos",
-        "Contato"
-      ];
+      reply = T.notFound;
+      suggestions = T.suggestionsMain;
     }
 
     setTimeout(() => {
       addMessage("bot", reply);
       showSuggestions(suggestions);
-    }, 400);
+    }, 300);
   }
 
-  // 🔹 TOGGLE CHAT + MENSAGEM AUTOMÁTICA
+  // 🔹 TOGGLE CHAT
   chatToggle.addEventListener("click", () => {
     chatbot.classList.toggle("hidden");
 
@@ -141,19 +168,8 @@ document.addEventListener("DOMContentLoaded", () => {
       welcomeSent = true;
 
       setTimeout(() => {
-        addMessage(
-          "bot",
-          "Olá! 👋 Eu sou o chatbot do portfólio.\n" +
-          "Se precisar de ajuda, digite *oi* ou use os botões abaixo 👇"
-        );
-
-        showSuggestions([
-          "Quem é Caetano?",
-          "Sou recrutador",
-          "Stack",
-          "Projetos",
-          "Contato"
-        ]);
+        addMessage("bot", T.autoWelcome);
+        showSuggestions(T.suggestionsMain);
       }, 300);
     }
   });

@@ -898,3 +898,66 @@ body::after {
   );
 }
 
+.lang {
+  position: relative;
+  margin-left: 16px;
+}
+
+.lang-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+  padding: 6px 12px 6px 6px;
+  cursor: pointer;
+  color: inherit;
+  transition: background 0.2s, transform 0.08s;
+}
+
+.lang-button:hover { background: rgba(255,255,255,0.18); }
+.lang-button:active { transform: scale(0.97); }
+
+.lang-circle {
+  width: 30px;
+  height: 30px;
+  background: rgba(0,0,0,0.28);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-svg { width: 16px; height: 16px; fill: currentColor; }
+
+.lang-text { font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
+
+.lang-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #11101d;
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 160px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  z-index: 1000;
+}
+
+.lang-dropdown button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.lang-dropdown button:hover { background: rgba(255,255,255,0.12); }
+
+/* classe para mostrar o menu */
+.lang-dropdown.active { display: flex; }
