@@ -1,0 +1,15 @@
+{
+  "url": "https://cae.guisso.dev",
+  "name": "Caetano Guisso",
+  "wordsPerMinute": 200,
+  "repo": "https://github.com/CaeGuisso/CaeGuisso.github.io",
+  "social": {
+    "github": "https://github.com/CaeGuisso",
+    "linkedin": "https://www.linkedin.com/in/caetano-guisso-7799723a5/",
+    "instagram": "https://www.instagram.com/cae.guisso/"
+  },
+  "community": {
+    "enabled": false,
+    "inviteUrl": ""
+  }
+}

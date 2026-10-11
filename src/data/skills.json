@@ -1,0 +1,18 @@
+[
+  { "group": "frontend", "items": [
+    { "name": "HTML", "icon": "html5/html5-original.svg" },
+    { "name": "CSS", "icon": "css3/css3-original.svg" },
+    { "name": "JavaScript", "icon": "javascript/javascript-original.svg" }
+  ]},
+  { "group": "tools", "items": [
+    { "name": "Git / GitHub", "icon": "github/github-original.svg", "invert": true },
+    { "name": "VS Code", "icon": "vscode/vscode-original.svg" }
+  ]},
+   { "group": "backend", "items": [
+    { "name": "Python", "icon": "python/python-original.svg" },
+    { "name": "Java", "icon": "java/java-original.svg" }
+  ]},
+  { "group": "db", "items": [
+    { "name": "SQLite", "icon": "sqlite/sqlite-original-wordmark.svg" }
+  ]}
+]

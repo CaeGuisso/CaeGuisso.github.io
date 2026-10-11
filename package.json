@@ -1,0 +1,19 @@
+{
+  "name": "caeguisso-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portfólio de Caetano Guisso — site estático gerado a partir de Markdown.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build.mjs",
+    "build:drafts": "node build.mjs --drafts",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs --watch",
+    "check": "node scripts/check-links.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "marked": "18.0.2"
+  }
+}
