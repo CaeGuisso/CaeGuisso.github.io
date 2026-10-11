@@ -3,7 +3,7 @@ title: Websites I've Built
 description: Websites built for businesses and personal projects, focusing on modern design, responsiveness, and user experience. Each project is designed to showcase services, strengthen online presence, and make it easier for customers to get in touch.
 category: Website
 tech: [HTML, CSS, JavaScript]
-image: /img/projects/portfolio1.webp
+image: /img/projects/portfolio.webp
 imageAlt: Illustration of Caetano Guisso's portfolio
 demo: /sites/en/
 demoLabel: View websites
