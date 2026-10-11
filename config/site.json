@@ -9,7 +9,7 @@
     "instagram": "https://www.instagram.com/cae.guisso/"
   },
   "community": {
-    "enabled": false,
-    "inviteUrl": ""
+    "enabled": true,
+    "inviteUrl": "https://discord.gg/5v6faP5eA7"
   }
 }
