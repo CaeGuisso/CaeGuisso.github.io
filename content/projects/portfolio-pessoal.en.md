@@ -1,13 +1,13 @@
 ---
-title: Personal Portfolio
-description: Personal website created to centralize my projects, studies, and my identity as a Backend Developer. Futuristic design focused on organization, clarity, and valuing the logical foundation behind each system.
+title: Websites I've Built
+description: Websites built for businesses and personal projects, focusing on modern design, responsiveness, and user experience. Each project is designed to showcase services, strengthen online presence, and make it easier for customers to get in touch.
 category: Website
 tech: [HTML, CSS, JavaScript]
 image: /img/projects/portfolio.webp
 imageAlt: Illustration of Caetano Guisso's portfolio
-demo: /en/
-demoLabel: View site
-repo: https://github.com/CaeGuisso/CaeGuisso.github.io
+demo: /sites/en/
+demoLabel: View websites
+repo: https://github.com/CaeGuisso?tab=repositories
 featured: true
 order: 10
 ---
