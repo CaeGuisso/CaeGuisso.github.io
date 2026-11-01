@@ -1154,3 +1154,291 @@ html {
     transform: none !important;
   }
 }
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-heading {
+  max-width: 650px;
+  margin-bottom: 34px;
+}
+
+.contact-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #7df9ff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.contact-heading h2 {
+  margin: 0;
+  color: #f5f7ff;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.055em;
+}
+
+.contact-heading h2 span {
+  color: #7df9ff;
+}
+
+.contact-heading p {
+  max-width: 520px;
+  margin-top: 18px;
+  color: #9ba2b5;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* PANEL */
+
+.contact-panel {
+  position: relative;
+  padding: 30px;
+  border: 1px solid rgba(125, 249, 255, 0.14);
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      ellipse at 0% 0%,
+      rgba(94, 231, 231, 0.07),
+      transparent 55%
+    ),
+    rgba(255, 255, 255, 0.018);
+  transition: border-color 0.3s ease;
+}
+
+.contact-panel:hover {
+  border-color: rgba(125, 249, 255, 0.25);
+}
+
+/* DISCORD */
+
+.contact-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-discord-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(125, 249, 255, 0.25);
+  border-radius: 12px;
+  background: rgba(125, 249, 255, 0.08);
+  color: #7df9ff;
+}
+
+.contact-discord-icon svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.contact-main-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-overline {
+  color: #7df9ff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.contact-main-info h3 {
+  margin: 5px 0;
+  color: #f5f7ff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.contact-main-info p {
+  margin: 0;
+  color: #939caf;
+  font-size: 0.88rem;
+}
+
+.contact-discord-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 13px 20px;
+  border: 1px solid rgba(125, 249, 255, 0.35);
+  border-radius: 8px;
+  background: rgba(125, 249, 255, 0.09);
+  color: #7df9ff;
+  font-size: 0.87rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-discord-btn:hover {
+  background: rgba(125, 249, 255, 0.16);
+  border-color: #7df9ff;
+  transform: translateY(-2px);
+}
+
+.contact-discord-btn span {
+  font-size: 1.1rem;
+}
+
+/* DIVIDER */
+
+.contact-divider {
+  height: 1px;
+  margin: 28px 0;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* SOCIAL GRID */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 14px;
+  padding: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.018);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-item:hover {
+  border-color: rgba(125, 249, 255, 0.3);
+  background: rgba(125, 249, 255, 0.035);
+  transform: translateY(-3px);
+}
+
+/* ICONS */
+
+.contact-item-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 8px;
+  background: rgba(125, 249, 255, 0.07);
+  color: #7df9ff;
+}
+
+.contact-item-icon svg {
+  display: block;
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* TEXT */
+
+.contact-item-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+
+.contact-item-info strong {
+  color: #eef1fa;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contact-item-info small {
+  overflow: hidden;
+  color: #8992a6;
+  font-size: 0.76rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ARROW */
+
+.contact-arrow {
+  color: #718095;
+  font-size: 1.1rem;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-item:hover .contact-arrow {
+  color: #7df9ff;
+  transform: translate(2px, -2px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+  .contact-panel {
+    padding: 21px;
+  }
+
+  .contact-main {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .contact-main-info {
+    flex-basis: calc(100% - 75px);
+  }
+
+  .contact-discord-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-heading h2 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-panel,
+  .contact-item,
+  .contact-discord-btn,
+  .contact-arrow {
+    transition: none;
+  }
+}

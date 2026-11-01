@@ -26,7 +26,111 @@ const media = (src, alt, cls = "card-media") =>
 export function homePage(ctx, lang, skills) {
   const t = ctx.strings[lang].home;
   const { site } = ctx;
+  const contact = `
+  <section class="section contact-section" aria-labelledby="contact-title">
+    <div class="container">
 
+      <div class="contact-heading">
+        <span class="contact-label">${lang === "en" ? "01 / GET IN TOUCH" : "01 / CONTATO"}</span>
+
+        <h2 id="contact-title">
+          ${lang === "en" ? "Let's build something" : "Vamos construir algo"}
+          <span>${lang === "en" ? "together." : "juntos?"}</span>
+        </h2>
+
+        <p>
+          ${lang === "en"
+            ? "Have a project in mind, an opportunity, or just want to connect? I'm only a message away."
+            : "Tem um projeto em mente, uma oportunidade ou simplesmente quer trocar uma ideia? Estou a uma mensagem de distância."}
+        </p>
+      </div>
+
+      <div class="contact-panel">
+
+        <div class="contact-main">
+          <div class="contact-discord-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.09.09 0 0 0 .034.062 19.9 19.9 0 0 0 6.002 3.03.077.077 0 0 0 .084-.027c.462-.63.875-1.295 1.226-1.994a.076.076 0 0 0-.042-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.29a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .08.01c.12.098.246.196.373.29a.077.077 0 0 1-.007.128c-.6.35-1.227.65-1.874.892a.076.076 0 0 0-.04.107c.36.698.773 1.362 1.224 1.992a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.01-3.03.077.077 0 0 0 .034-.061c.5-5.177-.838-9.674-3.55-13.66a.061.061 0 0 0-.031-.029ZM8.02 15.331c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.212 0 2.176 1.096 2.157 2.419 0 1.333-.955 2.419-2.157 2.419Zm7.974 0c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.212 0 2.176 1.096 2.157 2.419 0 1.333-.955 2.419-2.157 2.419Z"/>
+            </svg>
+          </div>
+
+          <div class="contact-main-info">
+            <span class="contact-overline">DISCORD</span>
+            <h3>${lang === "en" ? "Let's talk!" : "Vamos conversar?"}</h3>
+            <p>@sono90s · ${lang === "en" ? "Send me a message." : "Me mande uma mensagem."}</p>
+          </div>
+
+          <a class="contact-discord-btn"
+            href="https://discord.com/users/1191081268755042525"
+            target="_blank" rel="noopener noreferrer">
+            ${lang === "en" ? "Message me" : "Conversar comigo"} <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-divider"></div>
+
+        <div class="contact-grid">
+
+          <a class="contact-item"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=josecaetanoguisso@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="cursor: pointer;">
+            <span class="contact-item-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+              </svg>
+            </span>
+            <span class="contact-item-info">
+              <strong>E-mail</strong>
+              <small>${lang === "en" ? "Send me a message" : "Enviar uma mensagem"}</small>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a class="contact-item" href="https://www.linkedin.com/in/caetano-guisso-7799723a5/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-item-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </span>
+            <span class="contact-item-info">
+              <strong>LinkedIn</strong>
+              <small>${lang === "en" ? "Professional connections" : "Conexões profissionais"}</small>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a class="contact-item" href="https://github.com/CaeGuisso" target="_blank" rel="noopener noreferrer">
+            <span class="contact-item-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-1.9c-3.1.68-3.75-1.32-3.75-1.32-.5-1.3-1.23-1.65-1.23-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1 1.52-.75 1.52-.75.88-1.51 2.3-1.08 2.86-.83.09-.65.39-1.08.7-1.33-2.47-.28-5.07-1.23-5.07-5.5 0-1.21.43-2.2 1.14-2.98-.11-.28-.5-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.22 2.66.11 2.94.71.78 1.14 1.77 1.14 2.98 0 4.28-2.6 5.22-5.08 5.5.4.35.76 1.03.76 2.08v3.23c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/>
+              </svg>
+            </span>
+            <span class="contact-item-info">
+              <strong>GitHub</strong>
+              <small>${lang === "en" ? "Projects and contributions" : "Projetos e contribuições"}</small>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a class="contact-item" href="https://www.instagram.com/cae.guisso/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-item-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7Zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3Zm11 1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/>
+              </svg>
+            </span>
+            <span class="contact-item-info">
+              <strong>Instagram</strong>
+              <small>${lang === "en" ? "Follow me" : "Me acompanhe"}</small>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>`;
   const cards = skills
     .map(
       (g) => `<article class="card skill-card">
@@ -92,7 +196,11 @@ export function homePage(ctx, lang, skills) {
         ${cards}
       </div>
     </div>
-  </section>${community}`;
+  </section>
+
+  ${contact}
+  ${community}`;
+  
 
   return {
     lang,
